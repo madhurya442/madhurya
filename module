@@ -1,0 +1,3 @@
+reult = square(7)
+print("Square is:", result)
+square(7)
