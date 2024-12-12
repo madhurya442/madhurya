@@ -1,0 +1,4 @@
+angle=float(input("Enter an angle in degress:"))
+radian=math.radians(angle)
+print("Sine of angle:",math.sin(radian))
+print("Cosine of angle:",math.cos(radian))
