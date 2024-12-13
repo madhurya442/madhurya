@@ -1,0 +1,36 @@
+import random
+
+def ask_magic_8_ball():
+    # List of possible responses
+    responses = [
+        "Yes",
+        "No",
+        "Maybe",
+        "Definitely",
+        "Absolutely not",
+        "Ask again later",
+        "Outlook unclear"
+    ]
+    
+    # Ask the user for a question
+    question = input("Ask a yes/no question: ")
+
+    # Randomly choose a response from the list
+    response = random.choice(responses)
+
+    # Display the response
+    print(f"Magic 8-Ball says: {response}")
+
+# Main program
+if __name__ == "__main__":
+    print("Welcome to the Magic 8-Ball Extension!")
+    
+    while True:
+        ask_magic_8_ball()
+        
+        # Ask the user if they want to ask another question
+        again = input("\nDo you want to ask another question? (yes/no): ").lower()
+        
+        if again != "yes":
+            print("Goodbye! Come back soon.")
+            break
